@@ -29,7 +29,8 @@
         "build": "npm run build-plugin",
         "build-plugin": "rm -rf dist && npm run build-plugin-esm",
         "build-plugin-esm": "esbuild src/index.js --platform=node --format=esm --outfile=dist/index.js",
-        "lint": "eslint --ext .js ./src"
+        "lint": "eslint --ext .js ./src",
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3.3.1",
